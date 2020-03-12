@@ -29,3 +29,12 @@ Route::post('article','ArticleController@store');
 Route::put('article','ArticleController@store');
 //delete articles
 Route::delete('article/{id}','ArticleController@destroy');
+//get comments
+
+
+// for comments table
+Route::get('comments','CommentController@index');
+Route::get('comment/{id}','CommentController@show');
+Route::post('comment','CommentController@store');
+Route::put('comment','CommentController@store');
+Route::delete('comment','CommentController@destroy');
